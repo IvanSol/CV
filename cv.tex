@@ -82,8 +82,8 @@ ItalicFont = Fontin-Italic.otf
     \textsc{email:}     & \href{mailto:ivansolomat@yandex.ru}{ivansolomat@yandex.ru}; \href{mailto:ivan.solomatin@phystech.edu}{ivan.solomatin@phystech.edu}\\
     \textsc{Permanent Address:} & Russia, Moscow region, Mytischinskiy district, \\ 
                                 & Pirogovskiy set., Timiryazeva st., 2, 73.	\\
-    \textsc{Factual Address:} & Russia, Moscow region, Mytischinskiy district, \\
-                              & Pirogovskiy set., Timiryazeva st., 3A, 63.	 \\
+    %\textsc{Factual Address:} & Russia, Moscow region, Mytischinskiy district, \\
+    %                          & Pirogovskiy set., Timiryazeva st., 3A, 63.	 \\
     \textsc{Marital Status, Children:} & Single, no.\\
     \textsc{LinkedIn profile:} & \href{https://www.linkedin.com/in/ivan-solomatin-8aa26a152}{www.linkedin.com/in/ivan-solomatin-8aa26a152}\\
     \textsc{ResearchGate profile:} & \href{https://www.researchgate.net/profile/Ivan_Solomatin}{www.researchgate.net/profile/Ivan\_Solomatin}\\
@@ -97,14 +97,15 @@ ItalicFont = Fontin-Italic.otf
 \section{Education}
 \begin{tabular}{r|p{10.5cm}}	
 \textsc{Sep} 2018~--- \textsc{current} & PhD in Applied mathematics, \textbf{MIPT}, Moscow\\
+                                       & \small Advisor: \textsc{Ivan Matveev, D.Sc.}\\
 \\
 \textsc{Sep} 2016~--- \textsc{July} 2018 & Master of Science in Applied mathematics, \textbf{MIPT}, Moscow\\
-& Thesis: ``Iris image segmentation methods''; \small Advisor: Dr. Ivan \textsc{Matveev}\\
-&\normalsize \textsc{Gpa}: 4.89/5\\
+                                         & Thesis: ``Iris image segmentation methods''; \\
+                                         & \small Advisor: \textsc{Ivan Matveev, D.Sc.}; \normalsize \textsc{Gpa}: 4.89/5\\
 \\
 \textsc{Sep} 2012~--- \textsc{July} 2016 & Bachelor of Science in Applied mathematics, \textbf{MIPT}, Moscow\\
-& Thesis: ``Detecting visible areas of iris by classifier of local textural \\ 
-& features''; \small Advisor: Dr. Ivan \textsc{Matveev}\\
+                                         & Thesis: ``Detecting visible areas of iris by classifier of local textural \\ 
+                                         & features''; \small Advisor: \textsc{Ivan Matveev, D.Sc.}\\
 %&\normalsize \textsc{Gpa}: 29.85/30\hyperlink{grds_cleli}{\hfill| \footnotesize Detailed List of Exams}\\&\\
 \end{tabular}
 
@@ -113,22 +114,28 @@ ItalicFont = Fontin-Italic.otf
 \section{Work Experience}
 \begin{tabular}{r|p{10.5cm}}
 \textsc{Nov 2016} -- \textsc{current}  & Samsung R\&D Institute Russia. Engineer.\\
-                                       & \parbox{10.5cm}{\small Participated in developing iris recognition system for Samsung Galaxy S8/S8+/Note8/S9/S9+/Note9 devices.}
+                                       & \parbox{10.5cm}{\small Participated in developing: \\
+                                       $\bullet$ iris recognition system for Samsung Galaxy S8/S8+/Note8/S9/S9+/Note9. \\
+                                       $\bullet$ face recognition system for Samsung Galaxy S10/S10+/Note10/S11/S11+. \\
+                                       $\bullet$ developed, optimized and supported low level neural network engine for mentioned above and other algorithms.}
 \\
+\hline
 \textsc{Sep 2019} -- \textsc{current}  & Assistant teacher on Department of Mathematical Fundamentals of Control, MIPT.\\
                                        & \parbox{10.5cm}{\small Assistant teacher on "Basics of Machine Learning" course.}
 \\
-\textsc{Nov 2016} -- \textsc{May 2018} & Moscow Programming School (\href{www.informatics.ru}{www.informatics.ru}). Teacher, Coach for competitive programming.\\
-                                      & \small Lectured on algorithms for schoolchildren for 2 years. Trained 6 teams prize-winners of \href{https://olympiads.ru/team/}{Moscow team programming olympiad}, 2017, league B.
+\hline
+\textsc{Nov 2016} -- \textsc{May 2018} & Moscow Programming School (\href{www.informatics.ru}{www.informatics.ru}). \\
+                                       & Teacher, Coach for competitive programming.\\
+                                       & \small Lectured on algorithms for schoolchildren for 2 years. Trained 6 teams prize-winners of \href{https://olympiads.ru/team/}{Moscow team programming olympiad}, 2017, league B.
 
 \end{tabular}
 
 \section{Skills}
 \begin{tabular}{rl}
- Programming languages: & \textsc{C}, \textsc{C++}, \textsc{Python}, \textsc{Pascal}, \textsc{Delphi}, \textsc{Matlab}, \textsc{R}, \textsc{Lisp}, \textsc{SQL}, \\
-                        & \textsc{Wolfram Mathematica}, \textsc{Bash}.\\
+ Programming languages: & \textsc{C}, \textsc{C++}, \textsc{Python}, \textsc{Bash}, \textsc{Pascal}, \textsc{Delphi}, \textsc{Matlab}, \textsc{R}, \textsc{Lisp}, \textsc{SQL}, \\
+                        & \textsc{Wolfram Mathematica}.\\
 Libraries/technologies: & \textsc{opencv}, \textsc{pytorch}, \textsc{keras}, \textsc{tensorflow}, \textsc{sklearn}, \textsc{openGL}, \LaTeX, \textsc{git}, \textsc{Linux}.\\
-Other skills: & Deep learning, Biometrics, Iris recognition, Algorithms.
+Other skills: & Deep learning, Biometrics, Iris recognition, Face recognition, Algorithms.
 \end{tabular}
 
 \section{Scholarships and Certificates}
@@ -151,12 +158,10 @@ Other skills: & Deep learning, Biometrics, Iris recognition, Algorithms.
 \end{tabular}
 
 \section{Publications}
-\textbf{Patents:}
 \begin{enumerate}
 \item Russian Federation patent: Method of biometric authentication of the user and a computer device implementing the mentioned method. \href{http://new.fips.ru/publication-web/publications/document?type=doc&tab=IZPM&id=563975E5-21C6-42F2-A023-1485D06562B6}{RU 2697646 C1}
-\end{enumerate}
-\textbf{Journals:}
-\begin{enumerate}
+\item G. Odinokikh, M. Korobkin, I. Solomatin, I. Efimov, A. Fartukov, \textit{"Iris Feature Extraction and Matching Method for Mobile Biometric Applications"} // International Conf. on Biometrics (ICB). IEEE, 2019.
+\item Gnatyuk V. et al. Fast Automatic Exposure Adjustment Method for Iris Recognition System // 11th International Conf. on Electronics, Computers and Artificial Intelligence (ECAI). IEEE, 2019.
 \item G. Odinokikh, Y. Efimov, I. Solomatin, M. Korobkin, I. Matveev, \textit{"Iris Anti-spoofing Solution for Mobile Biometric Applications"} // Pattern Recognition and Image Analysis, 2018, No 4.
 \item M. Korobkin, G. Odinokikh, Y. Efimov, I. Solomatin, I. Matveev, \textit{"Iris Segmentation in Challenging Conditions"} // Pattern Recognition and Image Analysis, 2018, No 4.
 \item I. Solomatin, I. Matveev, V. Novik, \textit{“Detecting visible areas of iris by qualifier of
@@ -164,18 +169,18 @@ textures with basic set”} // Automation and Remote Control, 2018, Vol. 79, No.
 \item I. Solomatin, I. Matveev, \textit{“Detecting visible areas of iris by qualifier of local textural
 features”} // Journal of Machine Learning and Data Analysis. 2015, Vol. 1. No. 14. Pp. 1919-1929.
 \end{enumerate}
-\textbf{Conferences:}
-\begin{enumerate}
-\item G. Odinokikh, Y. Efimov, I. Solomatin, M. Korobkin, I. Matveev, \textit{"Iris Anti-spoofing Solution for Mobile Biometric Applications"} in Proceedings of the ICPRAI 2018, May 14-17, 2018, Montreal, Canada.
-\item M. Korobkin, G. Odinokikh, Y. Efimov, I. Solomatin, I. Matveev, \textit{"Iris Segmentation in Challenging Conditions"} in Proceedings of the ICPRAI 2018, May 14-17, 2018, Montreal, Canada.
-\item I. Solomatin, I. Matveev, \textit{“Detecting visible areas of iris by qualifier of local textural
-features”} in International scientific and technical conference of graduate students and young scientists ”Scientific session of Tomsk State University of Control Systems and Radioelectronics, Tomsk, 25-27 May, 2016.
-\item I. Solomatin, I. Matveev, V. Novik, \textit{“Detecting visible areas of iris by classifier of
-textures with basic set”} in 11th Conference on Intellectual Data Processing, Barcelona, Spain, 10-14 October, 2016.
-\item I. Solomatin, \textit{“Detecting visible areas of iris by qualifier of local textural features”} in 58th Science conference of MIPT with international involvement, Moscow, Russia, November 2015.
-\item I. Solomatin, I. Matveev, \textit{“Detecting visible areas of iris by qualifier of local textural
-features”} in 17th Conference on Mathematical Methods for Pattern Recognition, Svetlogorsk, 19-25 September, 2015.
-\end{enumerate}
+%\textbf{Conferences:}
+%\begin{enumerate}
+%\item G. Odinokikh, Y. Efimov, I. Solomatin, M. Korobkin, I. Matveev, \textit{"Iris Anti-spoofing Solution for Mobile Biometric Applications"} in Proceedings of the ICPRAI 2018, May 14-17, 2018, Montreal, Canada.
+%\item M. Korobkin, G. Odinokikh, Y. Efimov, I. Solomatin, I. Matveev, \textit{"Iris Segmentation in Challenging Conditions"} in Proceedings of the ICPRAI 2018, May 14-17, 2018, Montreal, Canada.
+%\item I. Solomatin, I. Matveev, \textit{“Detecting visible areas of iris by qualifier of local textural
+%features”} in International scientific and technical conference of graduate students and young scientists ”Scientific session of Tomsk State University of Control Systems and Radioelectronics, Tomsk, 25-27 May, 2016.
+%\item I. Solomatin, I. Matveev, V. Novik, \textit{“Detecting visible areas of iris by classifier of
+%textures with basic set”} in 11th Conference on Intellectual Data Processing, Barcelona, Spain, 10-14 October, 2016.
+%\item I. Solomatin, \textit{“Detecting visible areas of iris by qualifier of local textural features”} in 58th Science conference of MIPT with international involvement, Moscow, Russia, November 2015.
+%\item I. Solomatin, I. Matveev, \textit{“Detecting visible areas of iris by qualifier of local textural
+%features”} in 17th Conference on Mathematical Methods for Pattern Recognition, Svetlogorsk, 19-25 September, 2015.
+%\end{enumerate}
 %Section: Scholarships and additional info
 %\section{Scholarships and Certificates}
 %\begin{tabular}{rl}
@@ -189,27 +194,26 @@ features”} in 17th Conference on Mathematical Methods for Pattern Recognition,
 % \textsc{Russian:}&Mothertongue\\
 %\textsc{English:}&Fluent\\
 %\end{tabular}
-
-%\section{Achievements}
-%\begin{enumerate}
-%\item Diploma of competition of scientific research projects of international scientific and
-%technical conference of graduate students and young scientists ”Scientific session of Tomsk
-%State University of Control Systems and Radioelectronics”, Tomsk, 2016.
-%\item Diploma of DevCup: software development cup. 5 December, Moscow, 2013.
-%\item ACM certificate of achievement: 9-th place on 11-th Russian Team Programming Olympiad. Saint Petersburg, 2011.
-%\item Diploma and bronze medal of 11-th Russian Team Programming Olympiad. Saint Petersburg, 2011.
-%\item Absolute winner of XIV Open Team Programming Tournament, Kirov, 2011.
-%\item Winner of Moscow Programming Olympiad, Moscow, 2012.
-%\item Diploma of VI Open Programming Olympiad, MIPT, 2012.
-%\item Prize-winner of Moscow region stage of Russian Olympiad on Informatics, Moscow, 2012.
-%\item Diploma of Moscow Team Programming Olympiad. 2010.
-%\item Prize-winner of Moscow region stage of Russian Olympiad on Informatics, Moscow, 2011.
-%\item Diploma of Moscow Programming Olympiad, Moscow, 2011.
-%\item Diploma of 10-th Russian Team Programming Olympiad. Saint Petersburg, 2010.
-%\item Prize-winner of Moscow region stage of Russian Olympiad on Informatics, Moscow, 2010.
-%\item Prize-winner of Moscow region stage of Russian Olympiad on Mathematics, MIPT, 2012.
-%\item Prize-winner of Moscow region stage of Russian Olympiad on Physics, MIPT, 2012.
-%\item Absolute winner of “Phystech 2012” in Physics, MIPT, 2012
-%\end{enumerate}
+\section{Achievements}
+\begin{enumerate}
+\item Diploma of competition of scientific research projects of international scientific and
+technical conference of graduate students and young scientists ”Scientific session of Tomsk
+State University of Control Systems and Radioelectronics”, Tomsk, 2016.
+\item Diploma of DevCup: software development cup. 5 December, Moscow, 2013.
+\item ACM certificate of achievement: 9-th place on 11-th Russian Team Programming Olympiad. Saint Petersburg, 2011.
+\item Diploma and bronze medal of 11-th Russian Team Programming Olympiad. Saint Petersburg, 2011.
+\item Absolute winner of XIV Open Team Programming Tournament, Kirov, 2011.
+\item Winner of Moscow Programming Olympiad, Moscow, 2012.
+\item Diploma of VI Open Programming Olympiad, MIPT, 2012.
+\item Prize-winner of Moscow region stage of Russian Olympiad on Informatics, Moscow, 2012.
+\item Diploma of Moscow Team Programming Olympiad. 2010.
+\item Prize-winner of Moscow region stage of Russian Olympiad on Informatics, Moscow, 2011.
+\item Diploma of Moscow Programming Olympiad, Moscow, 2011.
+\item Diploma of 10-th Russian Team Programming Olympiad. Saint Petersburg, 2010.
+\item Prize-winner of Moscow region stage of Russian Olympiad on Informatics, Moscow, 2010.
+\item Prize-winner of Moscow region stage of Russian Olympiad on Mathematics, MIPT, 2012.
+\item Prize-winner of Moscow region stage of Russian Olympiad on Physics, MIPT, 2012.
+\item Absolute winner of “Phystech 2012” in Physics, MIPT, 2012
+\end{enumerate}
 
 \end{document}
