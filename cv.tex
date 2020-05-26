@@ -1,0 +1,215 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[margin=0.75in]{geometry}
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Ivan \textsc{Solomatin}
+	}\bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+\section{Personal Data}
+
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & Tula, Russia; 08.07.1994 \\
+    \textsc{Phone:}     & +7-977-408-58-83\\
+    \textsc{email:}     & \href{mailto:ivansolomat@yandex.ru}{ivansolomat@yandex.ru}; \href{mailto:ivan.solomatin@phystech.edu}{ivan.solomatin@phystech.edu}\\
+    \textsc{Permanent Address:} & Russia, Moscow region, Mytischinskiy district, \\ 
+                                & Pirogovskiy set., Timiryazeva st., 2, 73.	\\
+    \textsc{Factual Address:} & Russia, Moscow region, Mytischinskiy district, \\
+                              & Pirogovskiy set., Timiryazeva st., 3A, 63.	 \\
+    \textsc{Marital Status, Children:} & Single, no.\\
+    \textsc{LinkedIn profile:} & \href{https://www.linkedin.com/in/ivan-solomatin-8aa26a152}{www.linkedin.com/in/ivan-solomatin-8aa26a152}\\
+    \textsc{ResearchGate profile:} & \href{https://www.researchgate.net/profile/Ivan_Solomatin}{www.researchgate.net/profile/Ivan\_Solomatin}\\
+    \textsc{GoogleScholar id:} & \href{https://scholar.google.ru/citations?user=PnfFo0cAAAAJ}{PnfFo0cAAAAJ}
+    %\textsc{Date of Marriage:} & --\\
+    %\textsc{Passport:} & 46 14 553053\\
+
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{r|p{10.5cm}}	
+\textsc{Sep} 2018~--- \textsc{current} & PhD in Applied mathematics, \textbf{MIPT}, Moscow\\
+\\
+\textsc{Sep} 2016~--- \textsc{July} 2018 & Master of Science in Applied mathematics, \textbf{MIPT}, Moscow\\
+& Thesis: ``Iris image segmentation methods''; \small Advisor: Dr. Ivan \textsc{Matveev}\\
+&\normalsize \textsc{Gpa}: 4.89/5\\
+\\
+\textsc{Sep} 2012~--- \textsc{July} 2016 & Bachelor of Science in Applied mathematics, \textbf{MIPT}, Moscow\\
+& Thesis: ``Detecting visible areas of iris by classifier of local textural \\ 
+& features''; \small Advisor: Dr. Ivan \textsc{Matveev}\\
+%&\normalsize \textsc{Gpa}: 29.85/30\hyperlink{grds_cleli}{\hfill| \footnotesize Detailed List of Exams}\\&\\
+\end{tabular}
+
+
+%Section: Work Experience at the top
+\section{Work Experience}
+\begin{tabular}{r|p{10.5cm}}
+\textsc{Nov 2016} -- \textsc{current}  & Samsung R\&D Institute Russia. Engineer.\\
+                                       & \parbox{10.5cm}{\small Participated in developing iris recognition system for Samsung Galaxy S8/S8+/Note8/S9/S9+/Note9 devices.}
+\\
+\textsc{Sep 2019} -- \textsc{current}  & Assistant teacher on Department of Mathematical Fundamentals of Control, MIPT.\\
+                                       & \parbox{10.5cm}{\small Assistant teacher on "Basics of Machine Learning" course.}
+\\
+\textsc{Nov 2016} -- \textsc{May 2018} & Moscow Programming School (\href{www.informatics.ru}{www.informatics.ru}). Teacher, Coach for competitive programming.\\
+                                      & \small Lectured on algorithms for schoolchildren for 2 years. Trained 6 teams prize-winners of \href{https://olympiads.ru/team/}{Moscow team programming olympiad}, 2017, league B.
+
+\end{tabular}
+
+\section{Skills}
+\begin{tabular}{rl}
+ Programming languages: & \textsc{C}, \textsc{C++}, \textsc{Python}, \textsc{Pascal}, \textsc{Delphi}, \textsc{Matlab}, \textsc{R}, \textsc{Lisp}, \textsc{SQL}, \\
+                        & \textsc{Wolfram Mathematica}, \textsc{Bash}.\\
+Libraries/technologies: & \textsc{opencv}, \textsc{pytorch}, \textsc{keras}, \textsc{tensorflow}, \textsc{sklearn}, \textsc{openGL}, \LaTeX, \textsc{git}, \textsc{Linux}.\\
+Other skills: & Deep learning, Biometrics, Iris recognition, Algorithms.
+\end{tabular}
+
+\section{Scholarships and Certificates}
+\begin{tabular}{r|p{8cm}l}
+28 Mar 2016 & "R programming" course. & \href{https://www.coursera.org/account/accomplishments/certificate/WCGWD43MCTN2}{Coursera certificate}\\
+\\
+%11 Mar 2018 & "Neural Networks and Deep Learning" course. & \href{https://www.coursera.org/account/accomplishments/certificate/MVDRFUNUN5AX}{Coursera certificate}\\
+%\\
+%14 Apr 2018 & "Improving Deep Neural Networks" course. & \href{https://www.coursera.org/account/accomplishments/certificate/F4K5NMKPQTDR}{Coursera certificate}\\
+%\\
+15 Jun 2018 & Certificate of attendance of 15th international Summer School for Advanced Studies on "Assuring Trustworthiness of Biometrics". & \\
+\\
+%5 Nov 2018 & "Structuring Machine Learning Projects" course. & \href{https://www.coursera.org/account/accomplishments/verify/C32PMPATTWTU}{Coursera certificate}\\
+%\\
+%9 Aug 2019 & "Convolutional Neural Networks" course. & \href{https://www.coursera.org/account/accomplishments/verify/3UZLC8L3SXQG}{Coursera certificate}\\
+%\\
+%29 Sep 2019 & "Sequence Models" course. & \href{https://www.coursera.org/account/accomplishments/verify/SSTX4ZNQKRBN}{Coursera certificate}
+
+29 Sep 2019 & "Deep Learning" specialization (5 courses). & \href{https://www.coursera.org/account/accomplishments/specialization/JUG4WWN9PTD9}{Coursera certificate}
+\end{tabular}
+
+\section{Publications}
+\textbf{Patents:}
+\begin{enumerate}
+\item Russian Federation patent: Method of biometric authentication of the user and a computer device implementing the mentioned method. \href{http://new.fips.ru/publication-web/publications/document?type=doc&tab=IZPM&id=563975E5-21C6-42F2-A023-1485D06562B6}{RU 2697646 C1}
+\end{enumerate}
+\textbf{Journals:}
+\begin{enumerate}
+\item G. Odinokikh, Y. Efimov, I. Solomatin, M. Korobkin, I. Matveev, \textit{"Iris Anti-spoofing Solution for Mobile Biometric Applications"} // Pattern Recognition and Image Analysis, 2018, No 4.
+\item M. Korobkin, G. Odinokikh, Y. Efimov, I. Solomatin, I. Matveev, \textit{"Iris Segmentation in Challenging Conditions"} // Pattern Recognition and Image Analysis, 2018, No 4.
+\item I. Solomatin, I. Matveev, V. Novik, \textit{“Detecting visible areas of iris by qualifier of
+textures with basic set”} // Automation and Remote Control, 2018, Vol. 79, No. 3, Pp. 127–143.
+\item I. Solomatin, I. Matveev, \textit{“Detecting visible areas of iris by qualifier of local textural
+features”} // Journal of Machine Learning and Data Analysis. 2015, Vol. 1. No. 14. Pp. 1919-1929.
+\end{enumerate}
+\textbf{Conferences:}
+\begin{enumerate}
+\item G. Odinokikh, Y. Efimov, I. Solomatin, M. Korobkin, I. Matveev, \textit{"Iris Anti-spoofing Solution for Mobile Biometric Applications"} in Proceedings of the ICPRAI 2018, May 14-17, 2018, Montreal, Canada.
+\item M. Korobkin, G. Odinokikh, Y. Efimov, I. Solomatin, I. Matveev, \textit{"Iris Segmentation in Challenging Conditions"} in Proceedings of the ICPRAI 2018, May 14-17, 2018, Montreal, Canada.
+\item I. Solomatin, I. Matveev, \textit{“Detecting visible areas of iris by qualifier of local textural
+features”} in International scientific and technical conference of graduate students and young scientists ”Scientific session of Tomsk State University of Control Systems and Radioelectronics, Tomsk, 25-27 May, 2016.
+\item I. Solomatin, I. Matveev, V. Novik, \textit{“Detecting visible areas of iris by classifier of
+textures with basic set”} in 11th Conference on Intellectual Data Processing, Barcelona, Spain, 10-14 October, 2016.
+\item I. Solomatin, \textit{“Detecting visible areas of iris by qualifier of local textural features”} in 58th Science conference of MIPT with international involvement, Moscow, Russia, November 2015.
+\item I. Solomatin, I. Matveev, \textit{“Detecting visible areas of iris by qualifier of local textural
+features”} in 17th Conference on Mathematical Methods for Pattern Recognition, Svetlogorsk, 19-25 September, 2015.
+\end{enumerate}
+%Section: Scholarships and additional info
+%\section{Scholarships and Certificates}
+%\begin{tabular}{rl}
+% \textsc{Sept.} 2006 & Scholarship for graduate students with an outstanding curriculum %\footnotesize(\EURcr 30,000)\normalsize\\
+%\textsc{June} 2006 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fo%ntin.otf}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 %(89\textsuperscript{th} percentile)
+%\end{tabular}
+
+%Section: Languages
+%\section{Languages}
+%\begin{tabular}{rl}
+% \textsc{Russian:}&Mothertongue\\
+%\textsc{English:}&Fluent\\
+%\end{tabular}
+
+%\section{Achievements}
+%\begin{enumerate}
+%\item Diploma of competition of scientific research projects of international scientific and
+%technical conference of graduate students and young scientists ”Scientific session of Tomsk
+%State University of Control Systems and Radioelectronics”, Tomsk, 2016.
+%\item Diploma of DevCup: software development cup. 5 December, Moscow, 2013.
+%\item ACM certificate of achievement: 9-th place on 11-th Russian Team Programming Olympiad. Saint Petersburg, 2011.
+%\item Diploma and bronze medal of 11-th Russian Team Programming Olympiad. Saint Petersburg, 2011.
+%\item Absolute winner of XIV Open Team Programming Tournament, Kirov, 2011.
+%\item Winner of Moscow Programming Olympiad, Moscow, 2012.
+%\item Diploma of VI Open Programming Olympiad, MIPT, 2012.
+%\item Prize-winner of Moscow region stage of Russian Olympiad on Informatics, Moscow, 2012.
+%\item Diploma of Moscow Team Programming Olympiad. 2010.
+%\item Prize-winner of Moscow region stage of Russian Olympiad on Informatics, Moscow, 2011.
+%\item Diploma of Moscow Programming Olympiad, Moscow, 2011.
+%\item Diploma of 10-th Russian Team Programming Olympiad. Saint Petersburg, 2010.
+%\item Prize-winner of Moscow region stage of Russian Olympiad on Informatics, Moscow, 2010.
+%\item Prize-winner of Moscow region stage of Russian Olympiad on Mathematics, MIPT, 2012.
+%\item Prize-winner of Moscow region stage of Russian Olympiad on Physics, MIPT, 2012.
+%\item Absolute winner of “Phystech 2012” in Physics, MIPT, 2012
+%\end{enumerate}
+
+\end{document}
